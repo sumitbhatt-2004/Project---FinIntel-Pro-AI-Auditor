@@ -116,7 +116,7 @@ def get_comprehensive_audit(text):
     }}
     """
     response = client.chat.completions.create(
-        model=""llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}],
         response_format={"type": "json_object"}
     )
